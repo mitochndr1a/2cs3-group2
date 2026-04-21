@@ -73,6 +73,7 @@ class CategoryController extends Controller
         return response()->json($category);
     }
 
+    
     // DELETE /api/categories/{id}
     public function destroy($id)
     {
@@ -85,4 +86,4 @@ class CategoryController extends Controller
         $category->delete();
         return response()->json(['message' => 'Category deleted.']);
     }
-}
+} 
